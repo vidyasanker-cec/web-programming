@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Polygon Portion</title>
+    <style>
+        .polygon-image {
+            width: 150px;
+            height: 120px;
+            overflow: hidden;
+
+            clip-path: polygon(
+                0 0,
+                66.67% 0,
+                100% 66.67%,
+                33.33% 100%
+            );
+        }
+
+        .polygon-image img {
+            width: 500px;
+            height: 350px;
+            position: relative;
+            left: -250px;
+            top: -200px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Selected Image Portion</h1>
+
+    <div class="polygon-image">
+        <img src="tree.jpg" alt="Polygon portion of train image">
+    </div>
+
+</body>
+</html>
+

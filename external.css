@@ -1,0 +1,19 @@
+h1{
+    text-align: center;
+    color: red;
+  }
+  h2{
+    color: blue;
+  }
+  p{
+  background: #AA3377;
+  padding: 20px;
+  }
+  .basic{
+    background: #B8F1FF;
+    padding: 20px;
+  }
+  #combinator{
+    background: #B188FF;
+    padding: 20px;
+  }

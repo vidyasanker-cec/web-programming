@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration form</title>
+    <style>
+        body {
+            display: flex;           
+            justify-content: center;               
+        }
+        div {
+            background: #B8F1FF;
+            border: solid 1px black;
+            width: 50%;
+            padding: 20px;           
+        }
+        
+        h3 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+      <div>
+           <h3><u>Registration</u></h3>
+             <form>
+           	<label for="studentname">Name:</label>
+           	<input type="text" id="studentname" name="studentname"><br><br>
+           
+           	<label>Gender:</label>
+           
+           	<input type="radio" id="male" name="gender" value="male">
+           	<label for="male">Male</label>
+           
+           	<input type="radio" id="female" name="gender" value="female">
+           	<label for="female">Female</label><br><br>	
+           
+           	<label for="phone">Phone Number:</label>
+           	<input type="tel" id="phone" name="phone" ><br><br>
+           
+           	<label for="email">Email Address:</label>
+           	<input type="email" id="email" name="email" placeholder="name@example.com"><br><br>
+           	
+           	<label for="password">Password:</label>
+  		<input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                      title="Must contain at least one number, one uppercase, one lowercase letter, and at least 8 or more characters." 
+                      required><br><br>
+  		
+  		<label for="password">Confirm password:</label>
+  		<input type="password" id="password" name="password"><br><br>
+           
+           	<label for="address">Address:</label>
+           	<textarea id="address" name="address" rows="5" cols="40"></textarea><br><br>
+           	
+           	<label for="qualification">Qualification:</label>
+  		<select id="qualification" name="qualification">
+    			<option value="" disabled selected>Select your qualification</option>
+    			<option value="">SSLC</option>
+    			<option value="">+2</option>
+    			<option value="">under gradation</option>
+  		</select><br><br>
+  		
+  		<label for="course">Course:</label>
+  		<select id="course" name="course">
+    			<option value="" disabled selected>Select your course</option>
+    			<option value="">MCA</option>
+    			<option value="">Btech</option>
+    			<option value="">Mtech</option>
+  		</select><br><br>
+  		
+  		<label for="date">Date of transfer certificate:</label>
+  		<input type="date" id="date" name="date"><br><br>
+  		
+  		<label for="date">File upload:</label>
+  		<input type="file"><br><br>
+  		
+  		<button submit="" style="background: green">submit</button>
+  		<button  style="background: red">reset</button>
+  		
+             </form> 
+      </div>
+</body>
+</html>
+
